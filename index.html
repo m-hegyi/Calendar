@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calender</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="main-calender">
+    <div class="div-date-picker">
+        <div class="left-arrow"><p>&#10094;</p><!--balra nyíl--></div>
+        <div class="right-arrow"><p>&#10095;</p><!--jobbra nyíl--></div>
+        <form>
+            <select name="years" title="years" class="date-picker">
+                <option value="2015">2015</option>
+                <option value="2016" selected>2016</option>
+                <option value="2017">2017</option>
+            </select>
+            <select name="months" title="months" class="date-picker">
+                <option>Január</option>
+                <option>Február</option>
+                <option>Március</option>
+                <option>Április</option>
+                <option>Május</option>
+                <option>Június</option>
+                <option>Július</option>
+                <option>Augusztus</option>
+                <option>Szeptember</option>
+                <option>Október</option>
+                <option>November</option>
+                <option selected>December</option>
+            </select>
+        </form>
+    </div>
+    <div class="middle-content">
+        <div class="div-table-date">
+            <ul class="days-name">
+                <li class="date-day-name">Hét</li>
+                <li class="date-day-name">Ked</li>
+                <li class="date-day-name">Sze</li>
+                <li class="date-day-name">Csü</li>
+                <li class="date-day-name">Pén</li>
+                <li class="date-day-name">Szo</li>
+                <li class="date-day-name">Vas</li>
+            </ul>
+            <ul class="date-days">
+                <li class="date-day">
+                    <p class="date-day-p actual selected">1</p>
+                    <div class="active-self show-elements"><span class="active-self-numb">3</span></div>
+                </li>
+                <li class="date-day">
+                    <p class="date-day-p">2</p>
+                    <div class="active-self"></div>
+                    <div class="active-others"><span class="active-others-numb">3</span></div>
+                </li>
+                <li class="date-day"><p class="date-day-p disabled-day">3</p></li>
+                <li class="date-day"><p class="date-day-p">4</p></li>
+                <li class="date-day"><p class="date-day-p">5</p></li>
+                <li class="date-day"><p class="date-day-p">6</p></li>
+                <li class="date-day"><p class="date-day-p">7</p></li>
+            </ul>
+            <ul class="date-days">
+                <li class="date-day"><p class="date-day-p">8</p></li>
+                <li class="date-day"><p class="date-day-p">9</p></li>
+                <li class="date-day"><p class="date-day-p">10</p></li>
+                <li class="date-day"><p class="date-day-p">11</p></li>
+                <li class="date-day"><p class="date-day-p">12</p></li>
+                <li class="date-day"><p class="date-day-p">13</p></li>
+                <li class="date-day"><p class="date-day-p">14</p></li>
+            </ul>
+            <ul class="date-days">
+                <li class="date-day"><p class="date-day-p">15</p></li>
+                <li class="date-day"><p class="date-day-p">16</p></li>
+                <li class="date-day"><p class="date-day-p">17</p></li>
+                <li class="date-day"><p class="date-day-p">18</p></li>
+                <li class="date-day"><p class="date-day-p">19</p></li>
+                <li class="date-day"><p class="date-day-p">20</p></li>
+                <li class="date-day"><p class="date-day-p">21</p></li>
+            </ul>
+            <ul class="date-days">
+                <li class="date-day"><p class="date-day-p">22</p></li>
+                <li class="date-day"><p class="date-day-p">23</p></li>
+                <li class="date-day"><p class="date-day-p">24</p></li>
+                <li class="date-day"><p class="date-day-p">25</p></li>
+                <li class="date-day"><p class="date-day-p">26</p></li>
+                <li class="date-day"><p class="date-day-p">27</p></li>
+                <li class="date-day"><p class="date-day-p">28</p></li>
+            </ul>
+            <ul class="date-days">
+                <li class="date-day"><p class="date-day-p">29</p></li>
+                <li class="date-day"><p class="date-day-p">30</p></li>
+                <li class="date-day"><p class="date-day-p">31</p></li>
+                <li class="date-day"><p class="date-day-p">1</p></li>
+                <li class="date-day"><p class="date-day-p">2</p></li>
+                <li class="date-day"><p class="date-day-p">3</p></li>
+                <li class="date-day"><p class="date-day-p">4</p></li>
+            </ul>
+        </div>
+    </div>
+    <div class="bottom-content">
+        <div class="bottom-date-form-pic-div">
+            <div class="bottom-img-div"><img src="pics/prof.jpg" name="prof_pic" title="prof_pic" class="bottom-img"></div>
+            <div class="bottom-date-div"><p class="bottom-date-p">2016. November 30</p></div>
+            <div class="bottom-form-div">
+                <form>
+                    <input type="text" title="comment" disabled placeholder="Új bejegyzés" class="bottom-form-input">
+                </form>
+            </div>
+            <div class="plus-sign-div"><p class="plus-sign-p">&#x002B;</p></div>
+        </div>
+    </div>
+    <div class="today-list"><!--Az adott napon megjelenő találkozók listája-->
+        <div>
+            <div class="today-element">
+                <div class="today-img-div">
+                    <img src="pics/prof.jpg" name="prof_pic" title="prof_pic" class="bottom-img">
+                </div>
+                <div class="today-date-div">
+                    <p class="today-date-p">Dátum: <span class="today-date-span">2016. November 30.</span></p>
+                    <p class="today-date-p">Időpont: <span class="today-date-span">14:00 - 16:00</span></p>
+                </div>
+                <div class="today-comment-div">
+                    <p>Megbeszélés a 4. emeleti irodában</p>
+                </div>
+                <div class="today-partners-div">
+                    <span class="today-partners-span">Résztvevők: </span>
+                    <img src="pics/prof.jpg" name="prof_pic" title="prof_pic" class="bottom-img-sm">
+                </div>
+                <div class="today-buttons-div">
+                    <input type="button" title="edit" value="szerkesztés" name="edit" class="today-button">
+                    <input type="button" title="delete" value="törlés" name="delete" class="today-button">
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="today-element">
+                <div class="today-img-div">
+                    <img src="pics/prof.jpg" name="prof_pic" title="prof_pic" class="bottom-img">
+                </div>
+                <div class="today-date-div">
+                    <p class="today-date-p">Dátum: <span class="today-date-span">2016. November 30.</span></p>
+                    <p class="today-date-p">Időpont: <span class="today-date-span">14:00 - 16:00</span></p>
+                </div>
+                <div class="today-comment-div">
+                    <p>Megbeszélés a 4. emeleti irodában</p>
+                </div>
+                <div class="today-partners-div">
+                    <span class="today-partners-span">Résztvevők: </span>
+                    <img src="pics/prof.jpg" name="prof_pic" title="prof_pic" class="bottom-img-sm">
+                </div>
+                <div class="today-buttons-div">
+                    <input type="button" title="edit" value="szerkesztés" name="edit" class="today-button">
+                    <input type="button" title="delete" value="törlés" name="delete" class="today-button">
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="today-element">
+                <div class="today-img-div">
+                    <img src="pics/prof.jpg" name="prof_pic" title="prof_pic" class="bottom-img">
+                </div>
+                <div class="today-date-div">
+                    <p class="today-date-p">Dátum: <span class="today-date-span">2016. November 30.</span></p>
+                    <p class="today-date-p">Időpont: <span class="today-date-span">14:00 - 16:00</span></p>
+                </div>
+                <div class="today-comment-div">
+                    <p>Megbeszélés a 4. emeleti irodában aeraweasg aaf garerg mserlm wélmefélsmdf mseélrmélwemr élmwéemrl éwmré</p>
+                </div>
+                <div class="today-partners-div">
+                    <span class="today-partners-span">Résztvevők: </span>
+                    <img src="pics/prof.jpg" name="prof_pic" title="prof_pic" class="bottom-img-sm">
+                </div>
+                <div class="today-buttons-div">
+                    <input type="button" title="edit" value="szerkesztés" name="edit" class="today-button" >
+                    <input type="button" title="delete" value="törlés" name="delete" class="today-button">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
