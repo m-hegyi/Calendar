@@ -10,7 +10,7 @@ $year = $_GET["year"];
 
 $date = $year . "-" . $month . "-" . $day;
 
-if ($_SESSION['meetings']) {
+if (isset($_SESSION['meetings'])) {
 
 	$meetings = $_SESSION['meetings'];
 
